@@ -1,0 +1,55 @@
+#tumblr_controls, .tmblr-iframe{display:none !important;}
+
+h1, h2, h3, h4, h5, #logoholder p.text-logo{font-family:'{select:Title font}', Arial, "Helvetica Neue", "Helvetica", Helvetica,  sans-serif; font-weight: 700;}
+.header-font-Roboto h1{font-weight: 900;}
+.header-font-Open.Sans h1, .header-font-Open.Sans #logoholder p.text-logo, .header-font-Open.Sans h2, .header-font-Open.Sans h3, .header-font-Open.Sans h4, .header-font-Open.Sans h5{font-weight: 800;}
+.header-font-Open.Sans #aboutModal h2{font-weight:600;}
+.header-font-asap #aboutModal h2{font-weight:700;}
+.header-font-Signika #aboutModal h2{font-weight:600;}
+.header-font-Lobster.Two h1, .header-font-Lobster.Two h2, .header-font-Lobster.Two h3, .header-font-Lobster.Two h4, .header-font-Lobster.Two h5,.header-font-Lobster.Two  #logoholder p.text-logo{font-style:italic;}
+.header-color{background-color:{color:Header color};}
+.section-holder.image-yes.header-image.page-width .page-width-image{background-image:url({HeaderImage});}
+.section-holder.header-colored.page-width .page-width-image{background-color:{color:Header color};}
+.section-holder.image-yes.header-image.full-screen{background-image:url({HeaderImage});}
+-image
+.section-holder.header-colored.full-screen{background-color:{color:Header color};}
+.avatar-border-on {border-color:{TitleColor};}
+body{background-color:{BackgroundColor};}
+{block:IfNotBackgroundImage}
+.secondary-1-bg{background-color:{BackgroundColor};}
+{/block:IfNotBackgroundImage}
+{block:IfBackgroundImage}
+.secondary-1-bg{background-color:transparent;}
+{/block:IfBackgroundImage}
+#logoholder p.text-logo, #logoholder p.text-logo a {color:{TitleColor};}
+#logoholder p.text-logo{-webkit-text-stroke:{TitleColor} .15px;}
+.more_notes_link, .utility-button, .utility-button:hover, .utility-button:focus, .tool:hover, .access a:hover, .pagination li:hover a, .pagination li a:focus, .answer h3, .link h3 {background-color:{AccentColor};}
+.post article h1, #aboutModal h2, h3, .secondary-1-cl, a, .post-container .post article ol li:before, .post-container .post article ul li:before, #aboutModal ol li:before, #aboutModal ul li:before, .highlite-color {color:{AccentColor};}
+.post article h1, #aboutModal h2, h3, .secondary-1-cl {-webkit-text-stroke:{AccentColor} .15px;}
+.post .access-path, .next-path, .previous-path, .post-icon-path,  .general-bullet-text .general-bullet-path, .nav-button a svg{fill:{AccentColor};}
+.utility-button, .more_notes_link{border-color:{AccentColor};}
+.top-bar .toggle-topbar.menu-icon a span.more.icon:after {-webkit-box-shadow: 0 10px 0 2px {AccentColor}, 0 16px 0 2px {AccentColor}, 0 22px 0 2px {AccentColor}; -moz-box-shadow: 0 10px 0 2px {AccentColor}, 0 16px 0 2px {AccentColor}, 0 22px 0 2px {AccentColor}; box-shadow: 0 10px 0 2px {AccentColor}, 0 16px 0 2px {AccentColor}, 0 22px 0 2px {AccentColor};}
+.top-bar-section .has-dropdown > a:after {border-color: transparent transparent transparent {AccentColor};}
+.post blockquote{border-left-color:{AccentColor};}
+@media only screen and (min-width: 42.125em) {
+.narrow #permalink-section .columns .text-post article{-moz-column-count:{select:Custom pages column count};-webkit-column-count:{select:Custom pages column count};column-count:{select:Custom pages column count};}
+}
+@media only screen and (min-width: 48.0628em) {
+.top-bar-section li a:not(.button):hover {border-bottom-color:{AccentColor};}
+.top-bar-section .has-dropdown > a:after {border-color: {AccentColor} transparent transparent transparent;}
+.wide #permalink-section .columns .text-post article{-moz-column-count:{select:Custom pages column count};-webkit-column-count:{select:Custom pages column count};column-count:{select:Custom pages column count};}
+}
+/* reset to stop normal permalink being affected by above */
+#permalink-section .columns.large-12 .text-post article, #permalink-section .columns .text-post article.pages-disqus{-moz-column-count:1;-webkit-column-count:1;column-count:1;}
+{block:IfYourEmailAddress}.contact-drop-down{display:list-item;}{/block:IfYourEmailAddress}
+{block:AskEnabled}.contact-drop-down{display:list-item;}{/block:AskEnabled}
+{block:SubmissionsEnabled}.contact-drop-down{display:list-item;}{/block:SubmissionsEnabled}
+
+{CustomCSS}
+.header-top-container {
+    width: 100%;
+}
+
+.header-top {
+  background: url("media/girls.png") right center no-repeat;
+}
